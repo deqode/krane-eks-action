@@ -33,7 +33,7 @@ jobs:
           aws-region: us-east-1
 
       - name: krane deploy
-        uses: deqode/krane-action@master
+        uses: deqode/krane-eks-action@master
         env:
           KUBE_CONFIG_DATA: ${{ secrets.KUBE_CONFIG_DATA }}
         with:
